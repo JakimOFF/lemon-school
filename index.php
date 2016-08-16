@@ -8,6 +8,6 @@ echo "1";
     <title>Document</title>
 </head>
 <body>
-А тут у нас название
+А тут у нас название!
 </body>
 </html>
