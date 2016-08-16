@@ -23,7 +23,7 @@
         <li>Бежевый</li>
         <li>Коричневый</li>
     </ul>
-    <p>Берегите шиншилл, они чудо! <a href="https://www.youtube.com/watch?v=bmh3mDQrIak">Песня в тему.</a></p>
+    <p>Берегите шиншилл, они чудо! <a href="https://www.youtube.com/watch?v=bmh3mDQrIak" target="_blank">Песня в тему.</a></p>
 </div>
 </body>
 </html>
