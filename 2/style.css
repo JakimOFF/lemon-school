@@ -1,0 +1,19 @@
+p span {
+    text-decoration: underline;
+}
+img {
+    border: 4px double #ff00ff;
+}
+figure {
+    text-align: center;
+}
+figcaption {
+    font-size: 20px;
+}
+.text {
+    border-left:4px dashed #8a2be2;
+}
+li {
+    color: #006400;
+    font-size: 20px;
+}
