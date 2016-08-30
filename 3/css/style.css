@@ -5,8 +5,8 @@
     font-family: sans-serif;
 }
 .container {
-    margin-left:75px;
-    margin-right: 75px;
+    margin: 0 auto;
+    width: 1200px;
     border-right: 2px dotted black;
     border-left: 2px dotted black;
     display: block;
