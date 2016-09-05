@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.home {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-image: url(../img/top_29.png);
+    -webkit-background-size:50px 50px;
+    background-size:50px 50px;
+    top: 90%;
+    right: 5%;
+    z-index:1;
+}
+header,
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: no-repeat;
+    -webkit-background-size:100%;
+    background-size:100%;
+}
+header {
+    background-image: url(../img/header.jpg);
+}
+.wrapper {
+    width: 100%;
+}
+.menu {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+.menu li {
+    display: inline-block;
+    width: 200px;
+}
+.menu a {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: block;
+    line-height:3;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    transition: 1s;
+}
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: 1s;
+}
+.block {
+    width: 33%;
+    display: block;
+    float: left;
+    background-color: #fff;
+}
+.block img {
+    width: 200px;
+    height: 200px;
+    margin:0 auto;
+    display: block;
+}
+.block span {
+    font-size:24px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding: 10px 0 15px 0;
+}
+.block p {
+    margin: 10px;
+    line-height: 2;
+}
+.clear {
+    clear: both;
+}
+#about>img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.container .block {
+    background-color: #fff;
+    display: block;
+    width: 33%;
+    float: left;
+}
+#biography {
+    background-image: url(../img/imgblock.jpg);
+    -webkit-background-size:100%;
+    background-size:100%;
+    padding-top: 100px;
+}
+#biography h1 {
+    display: block;
+    position: absolute;
+    width: 50%;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+#biography p {
+    line-height: 1.7;
+    display: block;
+    position: absolute;
+    width: 50%;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+    padding-top: 100px;
+}
+.test {
+    margin-left: 31%;
+    width: 69%;
+    height: 645px;
+}
+#contacts {
+    background-image: url(../img/vk.jpg);
+}
+#contacts p {
+    display: inline-block;
+    height: 100px;
+    width: 33%;
+    margin-top: 300px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size:24px;
+    text-align: center;
+}
+#smile {
+    background-color: darkslategray;
+    color: #fff;
+}
