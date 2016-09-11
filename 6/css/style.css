@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    /*margin: 0;*/
+    /*padding: 0;*/
+    font-family: sans-serif;
+}
+ul>li {
+    list-style-type:none;
+    position: relative;
+}
+ul>li::before {
+    content: '★';
+    position: absolute;
+    font-size: 30px;
+    left: -30px;
+    top: -5px;
+}
+ul>li>ul>li::before {
+    content: '❤';
+    position: absolute;
+    font-size: 30px;
+    left: -30px;
+    top: -5px;
+}
+ul>li>ul>li>ul>li::before {
+    content: '☀';
+    position: absolute;
+    font-size: 30px;
+    left: -30px;
+    top: -5px;
+}
+ul>li>a::before {
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid #000000;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    transition: 1s;
+}
+ul>li>a:hover::before{
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+    position: relative;
+}
