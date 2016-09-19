@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.frames {
+    margin:100px 0 50px 50px;
+    border: 2px solid;
+    padding: 15px 0 12px 147px;
+    width: 150px;
+    height: 50px;
+    position: relative;
+}
+.frames::before {
+    content: '▌';
+    border: 2px solid;
+    padding: 15px 0 12px 147px;
+    background-color: #fff;
+    width: 0;
+    display: block;
+    position: absolute;
+    top: -70px;
+    left: -2px;
+}
+.frames::after {
+    content: '▌';
+    border: 2px solid;
+    padding: 15px 0 12px 147px;
+    background-color: #fff;
+    width: 0;
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: -1px;
+}
+.energy {
+    background-color: #ffc60b;
+    width: 66%;
+    height: 46px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.energy::before {
+    content: '';
+    background-color: #ed1c24;
+    width: 33%;
+    height: 45px;
+    position: absolute;
+    top: -68px;
+    left: -0.5px;
+}
+.energy::after {
+    content: '';
+    background-color: #00a055;
+    width: 152%;
+    height: 45px;
+    position: absolute;
+    top: 72px;
+    left: 0.5px;
+    z-index: 1;
+}
+.corners {
+    margin-top:150px;
+    margin-left: 50px;
+    font-size: 12px;
+    padding:17px 0 10px 10px;
+    color: #ffffff;
+    background-color: #008000;
+    width:300px;
+    height: 50px;
+    position: relative;
+    z-index:3;
+}
+.corners::before {
+    content: '';
+    height: 50px;
+    width: 290px;
+    position: absolute;
+    top: -2px;
+    border: 2px solid #008000;
+    z-index: 1;
+    left: 3px;
+}
+.button {
+    margin-top: 100px;
+    margin-left: 50px;
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+    background: linear-gradient(to top, #ffc4df 33%, #ffffff 45%, #ffc4df 65%);
+    color: #000;
+    display: inline-block;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+}
+.button::before {
+    content: '';
+    position: absolute;
+    -webkit-box-shadow: 0 0 15px rgb(237,237,237);
+    -moz-box-shadow: 0 0 15px rgb(237,237,237);
+    box-shadow: 0 0 15px rgb(237,237,237);
+    width: 155px;
+    height: 56px;
+    border: 2px solid #ffc4df;
+    top: -5px;
+    left: -5px;
+    border-radius: 30px;
+}
