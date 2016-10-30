@@ -5,9 +5,13 @@
     font-family: sans-serif;
     border-collapse: collapse;
 }
+
 .container {
     padding-left: 5%;
     padding-right: 5%;
+    margin: 0 auto;
+    width: 1280px;
+    position: relative;
 }
 span,
 h1, h2, h3, h4, h5, h6,
@@ -140,7 +144,7 @@ header {
     position: absolute;
     right: 0;
     top: 0;
-    margin-top: 46px;
+    margin-top: -10px;
     margin-right: 96px;
 }
 .main__checkbox .button>a {
@@ -218,7 +222,7 @@ header {
     width: 320px;
     height: 378px;
     background-color: #f5f6f7;
-    margin-right: 60px;
+    margin-right: 4%;
     padding: 19px 19px;
     border:6px solid transparent;
     transition: .2s;
@@ -360,26 +364,6 @@ header {
 .text_count.duster>.price_text_count {
     padding-left: 105px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .about {
     width: 100%;
     height: 400px;
@@ -458,7 +442,7 @@ footer>.container>div {
 }
 .footer_right_content {
     width: 320px;
-    margin-left: 507px;
+    margin-left: 440px;
     vertical-align: top;
     padding-top: 13%;
 }
@@ -484,6 +468,23 @@ footer>.container>div {
     width: 2px;
     right: 0;
     border-right: 2px solid #aa9b77;
+}
+.footer_nav>ul>li>a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid #fff;
+    width:0;
+    transition: 1s;
+}
+.footer_nav>ul>li>a:hover::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid #fff;
+    width:90%;
 }
 .footer_nav>ul>li:last-child>a::before {
     content: '';
