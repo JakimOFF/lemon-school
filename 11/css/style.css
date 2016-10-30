@@ -5,12 +5,16 @@
     font-family: sans-serif;
     border-collapse: collapse;
 }
-
+#header__bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 .container {
     padding-left: 5%;
     padding-right: 5%;
     margin: 0 auto;
-    width: 1280px;
+    width: 1263px;
     position: relative;
 }
 span,
@@ -222,7 +226,7 @@ header {
     width: 320px;
     height: 378px;
     background-color: #f5f6f7;
-    margin-right: 4%;
+    margin-right: 3%;
     padding: 19px 19px;
     border:6px solid transparent;
     transition: .2s;
@@ -442,7 +446,7 @@ footer>.container>div {
 }
 .footer_right_content {
     width: 320px;
-    margin-left: 440px;
+    margin-left: 425px;
     vertical-align: top;
     padding-top: 13%;
 }
