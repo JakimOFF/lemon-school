@@ -189,12 +189,14 @@ main>div {
     height: 301px;
 }
 .item_work {
-    width: 39%;
+    width: 33.3%;
 }
-.count_item-work {
+.count_item-work,
+.count_item-featured {
     height: 145px;
 }
-.square_count-item-work {
+.square_count-item-work,
+.square_count-item-featured {
     height: 67px;
     width: 67px;
     background-color: #e5eef0;
@@ -202,22 +204,26 @@ main>div {
     margin-right: 30px;
     margin-bottom: 28px;
 }
-.square_count-item-work:hover {
+.square_count-item-work:hover,
+.square_count-item-featured:hover {
     background-color: #f7941d;
 }
-.slogan_count_item-work {
+.slogan_count_item-work,
+.slogan_count_item-featured {
     font-size: 20px;
     line-height: 23px;
     letter-spacing: .025em;
     margin-bottom: 18px;
     font-family: 'Raleway', sans-serif;
 }
-.texts_count_item-work {
+.texts_count_item-work,
+.texts_count_item-featured {
     font-size: 14px;
     color: #55595f;
     font-family: 'Open Sans', sans-serif;
 }
-.more-info_item-work {
+.more-info_item-work,
+.more-info_item-featured {
     margin-left:97px;
     display: block;
     width: 171px;
@@ -232,12 +238,16 @@ main>div {
     font-family: 'Karla', sans-serif;
     text-align: center;
     padding-top: 8px;
+    transition: .7s;
 }
 .clients {
     height: 465px;
     background-color: #e5eef0;
 }
-.title_client {
+.title_client,
+.title_featured,
+.title_pricing,
+.title_team {
     padding-top: 100px;
     text-transform: uppercase;
     color: #23282f;
@@ -245,12 +255,18 @@ main>div {
     line-height: 24px;
     margin-bottom: 55px;
 }
-.name_title-client {
+.name_title-client,
+.name_title-featured,
+.name_title-pricing,
+.name_title-team {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 30px;
 }
-.text_title-client {
+.text_title-client,
+.text_title-featured,
+.text_title-pricing,
+.text_title-team {
     font-family: 'Karla', sans-serif;
     font-size: 18px;
 }
@@ -354,32 +370,293 @@ main>div {
 #list_3:checked ~ .carousel_img-client>.list_3>div {
     opacity: 1;
 }
-
-
 .featured {
     height: 660px;
+    position: relative;
+}
+.featured .wrapper {
+    border-bottom:1px solid #e5eef0;
+    height: 660px;
+}
+.item_featured {
+    width: 100%;
+    text-align: center;
+}
+.item_featured .count_item-featured {
+    display: inline-block;
+    width: 33%;
+}
+.count_item-featured {
+    text-align: left;
+}
+.more-info_item-featured {
+    margin-left: 0;
+    display: inline-block;
+}
+.figure_small {
+    border-bottom: 80px solid #29c2e1;
+    border-left: 58px solid transparent;
+    border-right: 49px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    z-index:2;
+}
+.figure_big {
+    z-index:1;
+    border-bottom: 109px solid #f69b37;
+    border-left: 66px solid transparent;
+    border-right: 69px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 8%;
 }
 .pricing {
     height: 715px;
+}
+.table_pricing,
+.items_team {
+    width: 100%;
+}
+.tariff_table-pricing,
+.item_items-team {
+    display: inline-block;
+    margin: 0 15px;
+    height: 425px;
+    width: 259px;
+    border: 1px solid #e6edee;
+    text-align: center;
+    position: relative;
+    transition: .7s;
+}
+.tariff_table-pricing:hover {
+    -webkit-box-shadow: 0 0 100px rgba(228,233,237, .75);
+    -moz-box-shadow: 0 0 100px rgba(228,233,237, .75);
+    box-shadow: 0 0 100px rgba(228,233,237, .75);
+}
+.action {
+    width: 93px;
+    height: 93px;
+    position: absolute;
+    background-image: url(../img/action.png);
+    z-index:1;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'Karla', sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: .025em;
+}
+.action span {
+    padding-top: 15px;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+    display: inline-block;
+    width: 125px;
+    height: 125px;
+}
+.tariff_table-pricing:first-child,
+.item_items-team:first-child {
+    margin-left: 0;
+}
+.tariff_table-pricing:last-child,
+.item_items-team:last-child {
+    margin-right: 0;
+}
+.name-tariff {
+    height: 67px;
+    display: inline-block;
+    padding-top: 37px;
+    text-transform: uppercase;
+    color: #23282f;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 800;
+    border-bottom: 1px solid #e6edee;
+    width: 100%;
+    position: relative;
+}
+.name-tariff::after {
+    content: '';
+    position: absolute;
+    border-bottom:1px solid #f7941d;
+    width: 38px;
+    bottom: -1px;
+    left: 77px;
+}
+.price-tariff {
+    height: 60px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 24px;
+    border-bottom: 1px solid #e6edee;
+    padding-top: 18px;
+}
+.price-tariff span {
+    color: #f7941d;
+}
+.description-tariff {
+    padding-top: 40px;
+}
+.description-tariff p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 36px;
+    color: #55595f;
+}
+.order-tariff {
+    width: 141px;
+    height: 38px;
+    border: 1px solid transparent;
+    -webkit-border-radius:14px;
+    -moz-border-radius:14px;
+    border-radius:14px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14.5px;
+    line-height: 36px;
+    letter-spacing: .075em;
+    background-color: #29c2e1;
+    text-decoration: none;
+    position: absolute;
+    bottom: 37px;
+    left: 61px;
+    transition: .7s;
+}
+.order-tariff:hover,
+.more-info_item-featured:hover,
+.more-info_item-work:hover,
+.sign-up_free:hover {
+    background-color: #188ea5;
 }
 .team {
     height: 680px;
     background-color: #e5eef0;
 }
+.item_items-team {
+    background-color: #ffffff;
+    height: 400px;
+}
+.item_items-team img {
+    width: 100%;
+    height: 276px;
+}
+.info_item-team {
+    padding-left: 25px;
+    padding-top: 20px;
+}
+.item_items-team:hover {
+    -webkit-box-shadow: 0 0 65px #ccdee2;
+    -moz-box-shadow: 0 0 65px #ccdee2;
+    box-shadow: 0 0 65px #ccdee2;
+}
+.info_item-team>div {
+    -ms-text-align-last: left;
+    text-align-last: left;
+}
+.name_info-item,
+.profession_info-item {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: .025em;
+    font-family: 'Karla', sans-serif;
+}
+.name_info-item {
+    text-transform: uppercase;
+    color: #23282f;
+}
+.profession_info-item {
+    color: #f7a244;
+}
+.social_block {
+    padding-top: 15px;
+}
+.social_team {
+    display: inline;
+    -ms-text-align-last: left;
+    text-align-last: left;
+    letter-spacing: .025em;
+    padding-right: 5px;
+}
+.social_team a {
+    color: #adbdc1;
+    transition: .5s;
+}
+.fb_info-item a:hover {
+    color: #3b5998;
+}
+.tw_info-item a:hover {
+    color: #00acee;
+}
+.go_info-item a:hover {
+    color: #DB4437;
+}
 .free {
     height: 320px;
+    text-align: center;
+    padding-top: 100px;
+}
+.free .wrapper {
+    height: 100%;
+    border-bottom:1px solid #e5eef0;
+}
+.title_free,
+.description_free {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .05em;
+    line-height: 24px;
+}
+.title_free {
+    font-weight: 500;
+    font-size: 30px;
+}
+.description_free {
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.link_free {
+    margin-top: 32px;
+}
+.sign-up_free {
+    background-color: #29c2e1;
+    margin-right: 10px;
+}
+.sign-up_free,
+.contact-us_free {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14.5px;
+    font-family: 'Karla', sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    width: 140px;
+    height: 38px;
+    border:1px solid transparent;
+    -webkit-border-radius:18px;
+    -moz-border-radius:18px;
+    border-radius:18px;
+    line-height: 38px;
+    letter-spacing: .048em;
+    transition: .7s;
+}
+.contact-us_free {
+    background-color: #f69b37;
+}
+.contact-us_free:hover {
+    background-color: #d1710a;
 }
 .footer {
     height: 430px;
 }
-
-
-
-
-
 .test {
     font-family: 'Karla', sans-serif;
     font-family: 'Roboto Slab', serif;
     font-family: 'Raleway', sans-serif;
-    font-family: 'Open Sans', sans-serif
+    font-family: 'Open Sans', sans-serif;
 }
